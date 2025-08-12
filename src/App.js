@@ -113,20 +113,24 @@ function App() {
             </h3>
             <ul className="space-y-3 text-gray-800">
               <li>
+                <span className="font-semibold text-purple-600">Language:</span>{" "}
+                Python, C++
+              </li>
+              <li>
                 <span className="font-semibold text-purple-600">Frontend:</span>{" "}
                 React, Tailwind CSS, JavaScript
               </li>
               <li>
                 <span className="font-semibold text-purple-600">Backend:</span>{" "}
-                Node.js, Express.js
+                Node.js, Express.js, Django
               </li>
               <li>
                 <span className="font-semibold text-purple-600">Database:</span>{" "}
-                MongoDB, MySQL
+                MySQL, Oracle SQL, PL/SQL Mongodb
               </li>
               <li>
                 <span className="font-semibold text-purple-600">Tools:</span>{" "}
-                Git, GitHub, VS Code, Postman
+                Powerbi DAX, Excel, Tableau, Postman
               </li>
             </ul>
           </div>

@@ -80,12 +80,15 @@ function App() {
         <div className="mt-16 animate-bounce">
           <span className="text-2xl text-gray-400">↓</span>
         </div>
+        
       </section>
 
       {/* About */}
      <div className="min-h-screen bg-white font-sans text-gray-900">
       {/* About Me Section */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section id="about" ref={(el) => (sectionRefs.current["about"] = el)}
+                className="min-h-screen bg-white font-sans text-gray-900 max-w-6xl mx-auto px-6 py-16">
+      {/* <section className="max-w-6xl mx-auto px-6 py-16"> */}
         <div className="grid md:grid-cols-2 gap-12">
           
           {/* Left Column - About Me */}

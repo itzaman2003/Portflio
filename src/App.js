@@ -83,64 +83,66 @@ function App() {
         
       </section>
 
-      {/* About */}
-     <div className="min-h-screen bg-white font-sans text-gray-900">
-      {/* About Me Section */}
-      <section id="about" ref={(el) => (sectionRefs.current["about"] = el)}
-                className="min-h-screen bg-white font-sans text-gray-900 max-w-6xl mx-auto px-6 py-16">
-      {/* <section className="max-w-6xl mx-auto px-6 py-16"> */}
-        <div className="grid md:grid-cols-2 gap-12">
-          
-          {/* Left Column - About Me */}
-          <div>
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              About <span className="text-purple-600">Me</span>
-            </h2>
-            <p className="text-lg leading-relaxed text-gray-700 mb-6">
-              I am a passionate and results-driven individual with experience in 
-              designing, developing, and delivering impactful solutions. My work 
-              blends creativity and technical expertise, allowing me to approach 
-              challenges with innovative and practical solutions.
-            </p>
-            <p className="text-lg leading-relaxed text-gray-700">
-              With a strong foundation in modern tools and technologies, I aim to 
-              contribute meaningfully to projects and continuously grow my 
-              knowledge and skills.
-            </p>
-          </div>
+{/* About */}
+<section
+  id="about"
+  ref={(el) => (sectionRefs.current["about"] = el)}
+  className="min-h-screen bg-white font-sans text-gray-900 max-w-6xl mx-auto px-6 py-16"
+>
+  <div className="grid md:grid-cols-2 gap-12 items-center">
+    
+    {/* Left Column - Photo */}
+    <div className="flex justify-center">
 
-          {/* Right Column - Core Skills */}
-          <div className="border border-purple-600 rounded-lg p-6 shadow-sm">
-            <h3 className="text-2xl font-bold text-purple-600 mb-4 border-b-2 border-purple-600 inline-block">
-              Core Skills
-            </h3>
-            <ul className="space-y-3 text-gray-800">
-              <li>
-                <span className="font-semibold text-purple-600">Language:</span>{" "}
-                Python, C++
-              </li>
-              <li>
-                <span className="font-semibold text-purple-600">Frontend:</span>{" "}
-                React, Tailwind CSS, JavaScript
-              </li>
-              <li>
-                <span className="font-semibold text-purple-600">Backend:</span>{" "}
-                Node.js, Express.js, Django
-              </li>
-              <li>
-                <span className="font-semibold text-purple-600">Database:</span>{" "}
-                MySQL, Oracle SQL, PL/SQL Mongodb
-              </li>
-              <li>
-                <span className="font-semibold text-purple-600">Tools:</span>{" "}
-                Powerbi DAX, Excel, Tableau, Postman
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
+      <img
+        src="/images/profile.png"
+        alt="Aman Ingle"
+        className="rounded-2xl shadow-lg w-80 h-80 object-cover" />
     </div>
+
+    {/* Right Column - About + Skills */}
+    <div>
+      <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        About <span className="text-purple-600">Me</span>
+      </h2>
+      <p className="text-lg leading-relaxed text-gray-700 mb-6">
+        I am a passionate and results-driven individual with experience in 
+        designing, developing, and delivering impactful solutions. My work 
+        blends creativity and technical expertise, allowing me to approach 
+        challenges with innovative and practical solutions.
+      </p>
+      <p className="text-lg leading-relaxed text-gray-700 mb-6">
+        With a strong foundation in modern tools and technologies, I aim to 
+        contribute meaningfully to projects and continuously grow my 
+        knowledge and skills.
+      </p>
+
+      {/* Core Skills */}
+      <div className="border border-purple-600 rounded-lg p-6 shadow-sm">
+        <h3 className="text-2xl font-bold text-purple-600 mb-4 border-b-2 border-purple-600 inline-block">
+          Core Skills
+        </h3>
+        <ul className="space-y-3 text-gray-800">
+          <li>
+            <span className="font-semibold text-purple-600">Language:</span> Python, C++
+          </li>
+          <li>
+            <span className="font-semibold text-purple-600">Frontend:</span> React, Tailwind CSS, JavaScript
+          </li>
+          <li>
+            <span className="font-semibold text-purple-600">Backend:</span> Node.js, Express.js, Django
+          </li>
+          <li>
+            <span className="font-semibold text-purple-600">Database:</span> MySQL, Oracle SQL, PL/SQL, MongoDB
+          </li>
+          <li>
+            <span className="font-semibold text-purple-600">Tools:</span> Power BI, DAX, Excel, Tableau
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Projects */}
       <section
@@ -163,6 +165,11 @@ function App() {
               title: "Hospitality Revenue Dashboard",
               desc: "Power BI dashboard with SQL & Excel automation for pricing optimization.",
             },
+            // {
+            //   title: "Modern-Apperal-Sales-Report",
+            //   desc: "Built an interactive Excel dashboard from 30,000+ sales records to track performance, trends, and customer segments for better targeting.",
+            // },
+            
           ].map((project, idx) => (
             <div key={idx} className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>

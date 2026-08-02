@@ -245,11 +245,6 @@ function App() {
             <div>
               <p className="section-kicker">About</p>
               <h2 className="section-title">Engineer with a data-first mindset.</h2>
-              <p className="mt-5 text-lg leading-8 text-slate-600">
-                I completed my Bachelor of Engineering in Artificial Intelligence and Machine Learning from P.E.S.
-                Modern College of Engineering, Pune, with an 8.4 CGPA. My work sits at the intersection of automation,
-                analytics, and AI-assisted product delivery.
-              </p>
               <div className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
                 <div className="flex items-start gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-amber-100 text-amber-700">
@@ -466,7 +461,7 @@ function App() {
 
       <footer className="border-t border-slate-200 bg-white px-5 py-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 text-sm font-semibold text-slate-500 md:flex-row md:items-center md:justify-between">
-          <p>© 2026 Aman Ingle. Built with React and Tailwind CSS.</p>
+          <p>© 2026 Aman Ingle.</p>
           <nav className="flex flex-wrap gap-4">
             <a href="#about" className="hover:text-slate-950">
               About

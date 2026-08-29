@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 import {
   FaArrowRight,
-  FaAward,
   FaBriefcase,
   FaCertificate,
   FaDatabase,
@@ -106,6 +105,11 @@ const certificates = [
 
 const activities = [
   {
+    title: "Monthly Recognition Award",
+    image: "/images/monthly-award.png",
+    text: "Received Blue Ridge Global's Monthly Recognition Award for helping recover the overall delivery timeline, mitigating delays, and supporting key customer onboarding.",
+  },
+  {
     title: "Vice President - ED Cell and IIC",
     image: "/images/img5.webp",
     text: "Organized 10+ innovation and entrepreneurship workshops that encouraged creative problem solving.",
@@ -183,10 +187,6 @@ function App() {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(20,184,166,0.18),transparent_32%),linear-gradient(135deg,#f7f8f4_0%,#eef6f2_42%,#f6f0df_100%)]" />
           <div className="relative mx-auto grid w-full max-w-6xl gap-12 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
-              <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-teal-200 bg-white/70 px-4 py-2 text-sm font-bold text-teal-800 shadow-sm">
-                <FaAward className="text-amber-500" />
-                Spot Award winner at Blue Ridge Global
-              </p>
               <h1 className="max-w-4xl text-5xl font-black leading-tight text-slate-950 sm:text-6xl lg:text-7xl">
                 Aman Ingle
               </h1>
@@ -360,13 +360,6 @@ function App() {
               <div>
                 <p className="section-kicker">Proof</p>
                 <h2 className="section-title">Certificates, achievements, and community leadership.</h2>
-                <div className="mt-6 rounded-lg border border-teal-200 bg-teal-50 p-5 text-teal-950">
-                  <p className="text-sm font-black uppercase tracking-wide">Achievement</p>
-                  <p className="mt-2 text-lg font-bold">
-                    Received the Spot Award at Blue Ridge Global for testing across different verticals to ensure
-                    quality.
-                  </p>
-                </div>
               </div>
               <div className="grid gap-4 sm:grid-cols-3">
                 {certificates.map((certificate) => {
@@ -401,10 +394,10 @@ function App() {
               </div>
             </div>
 
-            <div className="mt-12 grid gap-5 md:grid-cols-2">
+            <div className="mt-12 grid gap-5 md:grid-cols-3">
               {activities.map((activity) => (
                 <article key={activity.title} className="overflow-hidden rounded-lg border border-slate-200 bg-[#f7f8f4] shadow-sm">
-                  <img src={activity.image} alt={activity.title} className="h-56 w-full object-cover" loading="lazy" />
+                  <img src={activity.image} alt={activity.title} className="h-56 w-full object-cover object-top" loading="lazy" />
                   <div className="p-6">
                     <h3 className="text-xl font-black text-slate-950">{activity.title}</h3>
                     <p className="mt-3 text-sm leading-6 text-slate-600">{activity.text}</p>

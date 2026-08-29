@@ -251,7 +251,7 @@ function App() {
                     <FaGraduationCap />
                   </div>
                   <div>
-                    <h3 className="text-lg font-black text-slate-950">B.E. in AI and Machine Learning</h3>
+                    <h3 className="text-lg font-black text-slate-950">B.E. in Artificial Intelligence and Machine Learning</h3>
                     <p className="mt-1 text-sm font-semibold text-slate-500">
                       Savitribai Phule Pune University | 2021 - 2025
                     </p>

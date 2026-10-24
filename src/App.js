@@ -98,6 +98,11 @@ const certificates = [
     href: "https://www.coursera.org/account/accomplishments/specialization/T9UP4J8VEC7Z",
   },
   {
+    title: "Oracle Cloud Infrastructure Certified Foundations Associate",
+    text: "Foundational knowledge of Oracle Cloud Infrastructure services and concepts.",
+    href: "https://catalog-education.oracle.com/pls/certview/sharebadge?id=D7E0E2F3E8A47570A8FD95442CDE6AFEE3AEE41C5248FF1A82DCE3E14B2B746F",
+  },
+  {
     title: "Python Full Stack Development",
     text: "Frontend, backend, databases, deployment, and production-oriented development.",
   },
@@ -361,7 +366,7 @@ function App() {
                 <p className="section-kicker">Proof</p>
                 <h2 className="section-title">Certificates, achievements, and community leadership.</h2>
               </div>
-              <div className="grid gap-4 sm:grid-cols-3">
+              <div className="grid gap-4 sm:grid-cols-2">
                 {certificates.map((certificate) => {
                   const content = (
                     <>
